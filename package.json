@@ -1,0 +1,35 @@
+{
+  "name": "pos-printer",
+  "version": "0.0.1",
+  "description": "POS printer support",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "node src/test.ts",
+    "build": "rm -rf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimantoR/pos-printer.git"
+  },
+  "keywords": [
+    "pos",
+    "printer",
+    "thermal",
+    "receipt"
+  ],
+  "author": "Simanto Rahman",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/SimantoR/pos-printer/issues"
+  },
+  "homepage": "https://github.com/SimantoR/pos-printer#readme",
+  "dependencies": {
+    "node-thermal-printer": "git+https://github.com/SimantoR/node-thermal-printer.git",
+    "printer": "git+https://github.com/SimantoR/node-printer.git",
+    "receipt": "git+https://github.com/simantor/receipt.git"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "typescript": "^3.7.5"
+  }
+}
